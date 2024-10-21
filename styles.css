@@ -1,0 +1,970 @@
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+
+body {  
+    background-color: #000000; 
+    color: white; 
+    font-family: 'Arial', sans-serif;
+    margin: 0; 
+    line-height: 1.6;     
+} 
+
+
+header {  
+    background-color: #000000;
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    color: white;  
+    padding: 20px 0;  
+    text-align: center;  
+}  
+
+
+
+nav ul {  
+    color: white;
+    list-style: none;  
+    padding: 0;  
+    display: flex;
+    position: relative;
+} 
+
+ 
+nav ul li {  
+    color: white;
+    display: inline; 
+    margin: 0 15px; 
+    margin-right: 20px;  
+    position: relative;
+} 
+
+nav ul li a {  
+    text-decoration: none;
+    color: #fff; 
+    transition: color 0.3s;
+    font-weight: bold;  
+    padding: 5px 10px;
+    border-radius: 5px;
+} 
+
+.intro {  
+    text-align: center;  
+    padding: 100px 20px; 
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}  
+
+.intro h1 {  
+    font-size: 48px; 
+    margin-bottom: 10px;  
+}  
+
+.intro h2 {  
+    font-size: 32px; 
+    color: #e6194b;
+    margin-bottom: 20px;  
+}  
+
+.intro p {  
+    font-size: 18px; 
+    margin-bottom: 30px;  
+}  
+
+.cta-button { 
+    font-weight: bold; 
+    border: none;  
+    transition: background-color 0.3s, transform 0.2s; 
+    background-color: #007bff; 
+    color: white;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+    border-radius: 5px;  
+}  
+
+.cta-button:hover { 
+    background-color: #0056b3;   
+    transform: scale(1.05); 
+}  
+
+footer {  
+    text-align: center;  
+    padding: 20px;  
+    background-color: #000000; 
+    color: white;  
+    position: relative; 
+}  
+
+.footer-container {  
+    align-items: flex-start; 
+    background-color: #000000; 
+    padding: 20px;  
+    color: white; 
+    display: flex; 
+    justify-content: space-evenly; 
+    margin-bottom: 10px;
+}  
+
+.footer-section {  
+    flex: 1;  
+    margin: 0 10px;  
+}  
+
+.footer-section h3 {  
+    margin-bottom: 10px;  
+}  
+
+.footer-section ul {  
+    list-style-type: none;  
+}  
+
+.footer-section ul li {  
+    margin: 5px 0;  
+}  
+
+.footer-section ul li a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+.footer-bottom {  
+    text-align: center;  
+    margin-top: 10px; 
+    background-color: #000000; 
+    color: white;
+    border-top: 1px solid #ddd; 
+    padding: 10px;
+}  
+
+.about {  
+    text-align: center;  
+    padding: 50px 20px; 
+    background-color: #000000; 
+}  
+
+.tesla-logo {  
+    max-width: 200px;
+    margin-bottom: 20px; 
+}  
+
+.about h2 {  
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}  
+
+.about p {  
+    font-size: 18px; 
+    line-height: 1.6;
+    margin: 15px 0; 
+}
+
+.contact {  
+    text-align: center;  
+    padding: 50px 20px; 
+    background-color: #000000;
+}  
+
+.contact h2 {  
+    font-size: 36px; 
+    margin-bottom: 20px;
+}  
+
+.contact-info {  
+    font-size: 18px; 
+    margin: 15px 0; 
+}  
+
+.contact-info a {  
+    color: #ffffff;
+    text-decoration: none; 
+}  
+
+.contact-info a:hover {  
+    text-decoration: underline;
+}  
+
+.location {  
+    font-size: 18px; 
+    margin-top: 20px;
+    font-weight: bold; 
+}
+
+.gallery-section {  
+    padding: 50px 20px;
+    background-color: #000000;
+    text-align: center;  
+}  
+
+.gallery-section h2 {  
+    font-size: 36px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    color: #fff;   
+}  
+
+.gallery {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; 
+} 
+
+
+
+.media-item {  
+    cursor: pointer;
+    flex: 1 1 45%;
+    margin: 10px;  
+    text-align: center;  
+    background: #ffffff;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    overflow: hidden;  
+    color: #000;
+    transition: transform 0.2s;
+}  
+
+.media-item img, .media-item video {  
+    width: 100%; /* Full width for images and videos */  
+    display: block; /* Block display for layout consistency */  
+}  
+
+
+
+footer a {  
+    color: #e6194b; /* Link color in footer */  
+    text-decoration: none; /* Remove underline */  
+} 
+footer a {  
+    color: #e6194b; /* Link color in footer */  
+    text-decoration: none; /* Remove underline */  
+    margin: 0 10px; /* Space between links */  
+}   
+footer a {  
+    color: #e6194b; /* Link color in footer */  
+    text-decoration: none; /* Remove underline */  
+    margin: 0 10px; /* Space between links */  
+}  
+footer a {  
+    color: #e6194b; /* Link color in footer */  
+    text-decoration: none; /* Remove underline */  
+}  
+footer a {  
+    color: #3498db;  
+    text-decoration: none; /* Remove underline */  
+}  
+footer a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}
+
+
+
+
+
+
+
+.media-item:hover {  
+    transform: scale(1.05); /* Scale effect on hover */  
+}  
+
+.media-item img {  
+    width: 100%; /* Full width for images */  
+    display: block; /* Block display for layout consistency */  
+}  
+
+.fullscreen {  
+    display: none; /* Hidden by default */  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */  
+    justify-content: center; /* Centering content */  
+    align-items: center; /* Centering content */  
+    z-index: 1000; /* Layering */  
+}  
+
+.fullscreen-image {  
+    max-width: 90%; /* Responsive max-width for images */  
+    max-height: 90%; /* Responsive max-height for images */  
+}  
+
+.close, .prev, .next {  
+    color: rgb(255, 255, 255); /* White text for buttons */  
+    font-size: 30px; /* Size for navigation buttons */  
+    cursor: pointer; /* Pointer cursor for buttons */  
+    position: absolute; /* Positioned absolutely */  
+    top: 20px; /* Position from top */  
+}  
+
+.close {  
+    right: 30px; /* Position close button */  
+}  
+
+.prev {  
+    left: 30px; /* Position previous button */  
+}  
+
+.next {  
+    right: 30px; /* Position next button */  
+}  
+
+
+
+
+
+footer a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+.footer-link {  
+    display: inline-block; /* Inline Block for margin */  
+    margin: 0 10px; /* Space between footer links */  
+}
+
+
+
+.logo {  
+    display: flex; /* Arrange logo items in a row */  
+    align-items: center; /* Center items vertically */  
+}  
+
+.logo-img {  
+    width: 40px; /* Adjust size for the logo */  
+    height: 40px; /* Adjust size for the logo */  
+}  
+
+.logo-text {  
+    font-size: 24px; /* Logo text size */  
+    color: #e6194b; /* Color for logo text */  
+    margin-left: 10px; /* Space between logo image and text */  
+}  
+
+
+
+
+
+
+
+nav ul li a:hover {  
+    background-color: #333; /* Background color on hover */  
+}  
+
+.dropdown-content {  
+    display: none; /* Hidden by default */  
+    position: absolute; /* Dropdown positioned absolutely */  
+    background-color: #444; /* Dropdown background color */  
+    min-width: 180px; /* Minimum width of dropdown items */  
+    z-index: 1; /* Ensure dropdown appears above other content */  
+}  
+
+.dropdown:hover .dropdown-content {  
+    display: block; /* Show dropdown on hover */  
+}  
+
+.dropdown-content a {  
+    color: white; /* Text color for dropdown items */  
+    padding: 12px 16px; /* Padding for dropdown items */  
+    text-decoration: none; /* Remove text underline */  
+    display: block; /* Each item appears as a block */  
+}  
+
+.dropdown-content a:hover {  
+    background-color: #555; /* Background color on hover for dropdown */  
+}  
+
+
+
+ 
+
+
+
+.media-item:hover {  
+    transform: scale(1.05); /* Scale on hover */  
+}  
+
+.media-item img {  
+    width: 100%; /* Full width for images */  
+    display: block; /* Block display for layout consistency */  
+}  
+
+.fullscreen {  
+    display: none; /* Hidden by default */  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */  
+    justify-content: center; /* Center content */  
+    align-items: center; /* Center content */  
+    z-index: 1000; /* Layering */  
+}  
+
+.fullscreen-image {  
+    max-width: 90%; /* Responsive max-width for images */  
+    max-height: 90%; /* Responsive max-height for images */  
+}  
+
+.close, .prev, .next {  
+    color: white; /* White text for buttons */  
+    font-size: 30px; /* Size for navigation buttons */  
+    cursor: pointer; /* Pointer cursor for buttons */  
+    position: absolute; /* Positioned absolutely */  
+    top: 20px; /* Position from top */  
+}  
+
+.close {  
+    right: 30px; /* Position close button */  
+}  
+
+.prev {  
+    left: 30px; /* Position previous button */  
+}  
+
+.next {  
+    right: 30px; /* Position next button */  
+}  
+
+
+
+
+
+footer a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+.footer-link {  
+    display: inline-block; /* Inline block for margin */  
+    margin: 0 10px; /* Space between footer links */  
+}  
+
+/* Responsive Styles */  
+@media screen and (max-width: 768px) {  
+    nav ul li {  
+        display: block; /* Stacks nav items on small screens */  
+        margin: 10px 0; /* Vertical spacing */  
+    }  
+
+    .logo-img {  
+        width: 30px; /* Smaller logo for smaller screens */  
+        height: 30px; /* Smaller logo for smaller screens */  
+    }  
+
+    .gallery-section h2 {  
+        font-size: 28px; /* Adjusted size for smaller screens */  
+    }  
+}
+
+
+
+
+.logo {  
+    display: flex;  
+    align-items: center;  
+}  
+
+.logo-img {  
+    width: 50px; /* Adjust logo size */  
+    height: 50px; /* Adjust logo size */  
+}  
+
+.logo-text {  
+    font-size: 24px; /* Logo text size */  
+    margin-left: 10px; /* Space between logo image and text */  
+    color: #e6194b; /* Color for logo text */  
+}  
+
+
+
+
+
+
+nav ul li a:hover {  
+    background-color: #333; /* Background color on hover */  
+}  
+
+.dropdown-content {  
+    display: none; /* Hidden by default */  
+    position: absolute; /* Dropdown positioned absolutely */  
+    background-color: #444; /* Dropdown background color */  
+    min-width: 180px; /* Minimum width of dropdown items */  
+    z-index: 1; /* Ensure dropdown appears above other content */  
+}  
+
+.dropdown:hover .dropdown-content {  
+    display: block; /* Show dropdown on hover */  
+}  
+
+  
+
+
+
+.hero {  
+    text-align: center; /* Centered text */  
+    padding: 100px 20px; /* Space around hero section */  
+}  
+
+.hero h1 {  
+    font-size: 36px; /* Title size */  
+    margin-bottom: 20px; /* Space below title */  
+}  
+
+.hero p {  
+    font-size: 18px; /* Subtitle size */  
+    margin-bottom: 30px; /* Space below subtitle */  
+}  
+
+
+
+
+
+footer a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}
+
+
+
+
+.footer-section h4 {  
+    margin-bottom: 10px; /* Space below headers */  
+}
+  
+
+
+
+ 
+
+.footer-section h4 {  
+    margin-bottom: 10px; /* Space below headers */  
+}
+
+
+
+
+  
+
+.logo {  
+    display: flex;  
+    align-items: center;  
+}  
+
+.logo-img {  
+    width: 50px; /* Logo size */  
+    height: auto; /* Maintain aspect ratio */  
+}  
+
+.logo-text {  
+    font-size: 1.5em; /* Larger text for logo */  
+    margin-left: 10px; /* Space between logo and text */  
+}  
+
+
+
+ 
+
+ 
+
+nav ul li a:hover {  
+    color: #ff9800; /* Change color on hover */  
+}  
+
+
+
+
+
+.content {  
+    color: #ffffff;
+    padding: 20px;  
+    background: #000000; /* White background for content */  
+    border-radius: 8px; /* Rounded corners */  
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */  
+    margin: 20px; /* Space around content */  
+}  
+
+.achievements-section {  
+    background-color: #000000;
+    text-align: center; /* Centered section */  
+}  
+
+.achievements-container {  
+    background-color: #000;
+    display: flex;  
+    flex-wrap: wrap; /* Wrap items on smaller screens */  
+    justify-content: space-around; /* Space around achievements */  
+    margin-top: 20px; /* Space above achievements */  
+}  
+
+.achievement-card {  
+    color: #000000;
+    background-color: #f9f9f9; /* Card background */  
+    border: 1px solid #ddd; /* Border for card */  
+    border-radius: 5px; /* Rounded corners */  
+    padding: 15px; /* Padding inside cards */  
+    margin: 10px; /* Space between cards */  
+    width: 300px; /* Fixed card width */  
+    transition: transform 0.2s; /* Smooth scaling */  
+}  
+
+.achievement-card:hover {  
+    transform: scale(1.05); /* Scale up on hover */  
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Shadow on hover */  
+}  
+
+.achievement-card img {  
+    max-width: 100%; /* Responsive image */  
+    border-radius: 5px; /* Same rounded corners */  
+}  
+
+
+.footer-section h4 {  
+    margin-bottom: 15px; /* Space below headers */  
+    border-bottom: 2px solid #ff9800; /* Accent line below headers */  
+    padding-bottom: 5px; /* Space within header */  
+}  
+
+
+
+.footer-bottom p {  
+    font-size: 0.9em; /* Smaller font for copyright */  
+} 
+
+.content {  
+    padding: 40px; /* Increase padding for better spacing on council page */  
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent background for content to stand out */  
+    border-radius: 8px; /* Matching border radius */  
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */  
+}  
+
+.council-section {  
+    text-align: center; /* Centered text */  
+}  
+
+
+
+.council-container {  
+    display: flex; /* Flexbox for council members */  
+    flex-wrap: wrap; /* Wrap cards on small screens */  
+    justify-content: center; /* Center items */  
+    margin-top: 30px; /* Space above council members */  
+}  
+
+.council-member {  
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for member cards */  
+    border-radius: 5px; /* Rounded corners */  
+    padding: 20px; /* Internal padding */  
+    margin: 10px; /* Space between cards */  
+    width: 250px; /* Fixed width for cards */  
+    text-align: center; /* Center content within card */  
+    transition: transform 0.2s; /* Smooth scaling */  
+}  
+
+.council-member:hover {  
+    transform: scale(1.05); /* Scale up on hover */  
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Shadow on hover */  
+}  
+
+.council-member img {  
+    width: 100%; /* Responsive image size */  
+    border-radius: 5px; /* Match the card's corners */  
+    margin-bottom: 15px; /* Spacing below the image */  
+}  
+
+h1 {  
+    margin-bottom: 20px; /* Space below the main title */  
+    font-size: 2.5em; /* Large font for visibility */  
+}  
+
+h3 {  
+    margin-bottom: 10px; /* Space below member name */  
+}  
+
+/* Additional styles for footer links */  
+
+
+footer a:hover {  
+    text-decoration: underline; /* Underline on hover for better UX */  
+}
+
+
+
+
+
+
+.logo {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+.logo-img {  
+    width: 50px;  
+    height: 50px;  
+    margin-right: 10px;  
+}  
+
+
+
+
+
+
+
+
+/* Content Styles */  
+.content {  
+    padding: 20px;  
+    background-color: #000;
+}  
+
+.council-section {  
+    margin-bottom: 40px; 
+    background-color: #000; 
+
+}  
+
+h2 {  
+    color: #f7f7f7;  
+    margin-bottom: 20px;  
+}  
+
+/* Member Card Styles */  
+.council-container {  
+    display: flex;  
+    background-color: #000;
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    margin: 0 -10px; /* Adjust for card spacing */  
+}  
+
+.member-card {  
+    background-color: white; 
+    color: #000; 
+    border-radius: 10px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+    margin: 10px;  
+    padding: 15px;  
+    width: calc(25% - 20px); /* Provide 4 cards per row with spacing */  
+    transition: transform 0.2s;  
+}  
+
+.member-card:hover {  
+    transform: scale(1.05);  
+}  
+
+.member-card img {  
+    width: 100px; /* Set a fixed width */  
+    height: 100px; /* Set a fixed height */  
+    border-radius: 50%;  
+}  
+
+.member-card h3 {  
+    margin-top: 10px;  
+    margin-bottom: 5px;  
+}  
+
+.member-card p {  
+    margin: 5px 0;  
+}  
+
+.member-card a {  
+    color: #3498db;  
+    text-decoration: none;  
+}  
+
+.member-card a:hover {  
+    text-decoration: underline;  
+}
+.council-container {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: center; /* This centers the member cards */  
+}  
+
+.member-card {  
+    width: 200px; /* Adjust as necessary */  
+    margin: 15px; /* Space between cards */  
+    text-align: center; /* Center text in cards */  
+}  
+
+/* Optional: Specific styling for Proffer-In-Charge to make it stand out */  
+.proffer-in-charge {  
+    background-color: #f0f0f0; /* Light background to stand out */  
+    border: 2px solid #007BFF; /* Border to emphasize it */  
+    transition: transform 0.3s;  
+}  
+
+.proffer-in-charge:hover {  
+    transform: scale(1.05); /* Slightly enlarge on hover */  
+}
+
+
+/* Registration form styles */  
+.registration-form {  
+    max-width: 600px;  
+    margin: 40px auto;  
+    padding: 20px;  
+    background-color: white;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}  
+
+
+h2 {  
+    color: #ffffff;  
+}  
+
+label {  
+    display: block;  
+    margin-top: 15px;  
+    font-weight: bold;  
+}  
+
+input[type="text"],  
+input[type="number"],  
+select {  
+    width: 100%;  
+    padding: 10px;  
+    margin-top: 5px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+
+input[type="checkbox"] {  
+    margin-left: 10px;  
+}  
+
+button {  
+    background-color: #4b79a1;  
+    color: white;  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    margin-top: 20px;  
+}  
+
+button:hover {  
+    background-color: #3a5f7a;  
+}  
+
+
+/* Add this to the existing CSS */  
+.registration-form div {  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 20px; /* Add space between checkboxes */  
+}  
+
+/* Ensure labels align nicely */  
+.registration-form label {  
+    flex: 1 1 auto; /* Flex-grow and flex-shrink and defines the basis */  
+}
+
+
+nav ul li a:hover,  
+nav ul li a.active {  
+    text-decoration: underline;  
+}  
+
+.content {  
+    color: white;
+    padding: 20px;  
+    max-width: 800px;  
+    margin: 20px auto;  
+    background: #000000;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+.projects-container { 
+    color: white; 
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+    margin-top: 20px;  
+    background-color: #000;
+}  
+
+
+
+.media-item img {  
+    width: 100%;  
+    height: auto;  
+    border-bottom: 2px solid #007BFF;  
+}  
+
+
+.registration-form{
+    color: #000;
+}
+
+
+
+ 
+
+
+
+
+nav ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin-right: 20px;  
+}  
+
+nav ul li a {  
+    color: #fff;  
+    text-decoration: none;  
+    font-weight: bold;  
+}  
+
+
+
+
+
+
+
+
+.projects-container {  
+    display: flex;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+    margin-top: 20px;  
+}  
+
+.media-item {  
+    flex: 1 1 45%; /* Grow and shrink */  
+    margin: 10px;  
+    text-align: center;  
+    background: #000000; /* Darker card background */  
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);  
+    color: #ccc;
+    overflow: hidden;  
+}  
+
+.media-item img {  
+    width: 100%;  
+    height: auto;  
+    border-bottom: 2px solid #ff4081; /* Border color */  
+}  
+
+
+
+
+
+
+
+
+
+
+
